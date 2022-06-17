@@ -26,29 +26,31 @@
 }
 
 body, html {
-    height: 100%;}
-
-.pageWrapper {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
 }
 
 header, footer {
     background-color: var(--DarkBlue);
     font: var(--Secondary);
     color: var(--Gray);
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
     width: 100%;
 }
+footer {
+    text-align: center;
+}
 
-.siteHeader {
+.wrapper {
+    height: 100%;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
     justify-content: space-between;
-    padding: 1.5em;
 }
 
 .logo {
@@ -58,6 +60,7 @@ header, footer {
 
 .navLinks {
     display: flex;
+    justify-content: flex-end;
     list-style-type: none;
     gap: 1em;
 }
@@ -67,13 +70,19 @@ header, footer {
     text-decoration: none;
 }
 
-.hero {
-    background-color: var(--DarkBlue);
+main {
     display: grid;
-    grid-template: 100% / 1fr 1fr;
-    padding: 5em;
+    grid-template: 1fr 1fr 1fr 1fr / 100%;
 }
 
+.hero {
+    background-color: var(--DarkBlue);
+}
+
+.hero-wrapper {
+    display: grid;
+    grid-template: 100% / 1fr 1fr;
+}
 
 /* placeholder */
 .heroOverlay {
@@ -97,18 +106,12 @@ button {
     background-color: var(--Blue);
     color: var(--White);
     border: none;
-    padding: .5em 1.5em .5em 1.5em;
+    padding: .5em 2em .5em 2em;
     border-radius: 8px;
     font-weight: bolder;
 }
 
-main {
-    display: grid;
-    grid-template: 1fr 1fr 1fr 1fr / 100%;
-}
-
-.info {
-    color:#1F2937;
+.info-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -117,6 +120,7 @@ main {
 
 .infoHeading {
     font: var(--LargeInfo);
+    color: var(--DarkBlue);
 }
 
 .cardList {
@@ -131,21 +135,35 @@ main {
     font: var(--Quote);
 }
 
+.quote-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .quoteAttribution {
     color: var(--DarkBlue);
     font: var(--Logo);
-    text-align: right;
+    align-self: flex-end;
 }
 
-.cta {
-margin-left: 10vw;
+.cta-wrapper {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .ctaBanner {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--Blue);
     border-radius: 8px;
-    padding: 3em;
 }
-.ctaContent {}
-.ctaBtn {}
+.ctaContent {
+    padding: 2em;
+}
+.ctaBtn {
+    border: 1px solid var(--White);
+}
