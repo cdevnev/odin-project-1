@@ -74,6 +74,15 @@ header, footer {
     padding: 5em;
 }
 
+
+/* placeholder */
+.heroOverlay {
+    background-color: #6F737C;
+    width: 450px;
+    height: 200px;
+    margin: auto;
+}
+
 .heroHeading {
     font: var(--LargeHero);
     color: var(--White);
@@ -84,7 +93,7 @@ header, footer {
     color: var(--Gray);
 }
 
-.heroButton {
+button {
     background-color: var(--Blue);
     color: var(--White);
     border: none;
@@ -127,3 +136,11 @@ main {
     font: var(--Logo);
     text-align: right;
 }
+
+.cta {
+
+}
+
+.ctaBanner {}
+.ctaContent {}
+.ctaBtn {}
