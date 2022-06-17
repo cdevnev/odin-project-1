@@ -138,9 +138,14 @@ main {
 }
 
 .cta {
-
+margin-left: 10vw;
 }
 
-.ctaBanner {}
+.ctaBanner {
+    display: flex;
+    background-color: var(--Blue);
+    border-radius: 8px;
+    padding: 3em;
+}
 .ctaContent {}
 .ctaBtn {}
