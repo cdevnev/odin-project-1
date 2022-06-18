@@ -41,9 +41,8 @@ footer {
 
 .wrapper {
     height: 100%;
-    width: 70vw;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 62.5vw;
+    margin: auto;
 }
 
 .header-wrapper {
@@ -51,6 +50,9 @@ footer {
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
+    margin-top: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .logo {
@@ -72,7 +74,7 @@ footer {
 
 main {
     display: grid;
-    grid-template: 1fr 1fr 1fr 1fr / 100%;
+    grid-template: 40vh 40vh 40vh 40vh  / 100%;
 }
 
 .hero {
@@ -80,19 +82,29 @@ main {
 }
 
 .hero-wrapper {
-    display: grid;
-    grid-template: 100% / 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15vw;
 }
 
 /* placeholder */
 .heroOverlay {
     background-color: #6F737C;
-    width: 450px;
+    width: 350px;
     height: 200px;
     margin: auto;
 }
 
+.heroContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
 .heroHeading {
+
     font: var(--LargeHero);
     color: var(--White);
 }
@@ -114,8 +126,10 @@ button {
 .info-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    padding-left: 7vw;
+    padding-right: 7vw;
 }
 
 .infoHeading {
@@ -125,8 +139,22 @@ button {
 
 .cardList {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
     font:var(--Secondary);
     color: var(--DarkBlue);
+    list-style-type: none;
+    text-align: center;
+}
+
+.card {
+    margin: 0 auto;
+    border-radius: 8px;
+    border: 2px solid var(--Blue);
+    width: 9em;
+    height: 8em;
+    margin-bottom: .5em;
 }
 
 .quote {
@@ -140,6 +168,8 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 7vw;
+    padding-right: 7vw;
 }
 
 .quoteAttribution {
@@ -149,21 +179,28 @@ button {
 }
 
 .cta-wrapper {
-    margin-top: auto;
-    margin-bottom: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .ctaBanner {
+    height: 8em;
+    padding-left: 5em;
+    padding-right: 5em;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--Blue);
     border-radius: 8px;
+    color: var(--White);
 }
 .ctaContent {
     padding: 2em;
+    color: var(--Gray);
 }
 .ctaBtn {
     border: 1px solid var(--White);
+    margin-left: auto;
 }
