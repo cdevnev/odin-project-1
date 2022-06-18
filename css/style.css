@@ -10,7 +10,7 @@
 
     /* Fonts */
     /* font: optional; */
-    --LargeHero: 900 3rem 'Roboto', sans-serif;
+    --LargeHero: 900 3rem/.9 'Roboto', sans-serif;
     --Secondary: 400 1.125rem 'Roboto', sans-serif;
     --LargeInfo: 900 2.25rem 'Roboto', sans-serif;
     --Logo: 700 1.5rem 'Roboto', sans-serif;
@@ -104,7 +104,6 @@ main {
 }
 
 .heroHeading {
-
     font: var(--LargeHero);
     color: var(--White);
 }
@@ -112,6 +111,7 @@ main {
 .heroText {
     font: var(--Secondary);
     color: var(--Gray);
+    margin-bottom: 1em;
 }
 
 button {
@@ -128,8 +128,8 @@ button {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding-left: 7vw;
-    padding-right: 7vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
 }
 
 .infoHeading {
@@ -168,8 +168,8 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 7vw;
-    padding-right: 7vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
 }
 
 .quoteAttribution {
